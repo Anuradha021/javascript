@@ -33,7 +33,7 @@ console.log(fruit);
 // To add an element/item at a random index inside an array we use the splice method.
 
 
-array.splice(startIndex, deleteCount, item1, item2, ...);
+//array.splice(startIndex, deleteCount, item1, item2, ...);
 
 const fru = ['apple', 'orange'];
 
