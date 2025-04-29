@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            addEventListener example
+        </title>
+    </head>
+    <body>
+        
+            <button id = "myButton">click me</button>
+       <script>
+        var button = document.getElementById("myButton");
+        function handleButtonClick(){
+            button.style.background="pink",
+            console.log("button clicked")
+
+        }
+        button.addEventListener('click',handleButtonClick);
+       setTimeout(function(){
+              button.removeEventListener("click",handleButtonClick),
+              alert("Evnet listener removed ")
+       },5000)
+       </script>
+    </body>
+</html>

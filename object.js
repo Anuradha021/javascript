@@ -99,12 +99,24 @@ console.log(crr.indexOf(9));
 
 //------------------------------find method-------------------
 //find method =>returns at the first instance when true
-let ar= ["radha","krishna","govind"];
-let find = ar.find((a)=>{return a.includes("vi")})
-console.log(find);   
+// let ar= ["radha","krishna","govind"];
+// let find = ar.find((a)=>{return a.includes("vi")})
+// console.log(find);   
 
-//---for each
-let a = [1,2,3];
-a.forEach((value,index)=>{
-    console.log("number",value,"index",index);
-})
+// //---for each
+// let a = [1,2,3];
+// a.forEach((value,index)=>{
+//     console.log("number",value,"index",index);
+// })
+
+let person = {
+    name: "Mayank",
+    age: 21,
+    country : "India",
+    message: function() {
+        console.log("Hello, my name is " + this.name);
+    }
+};
+
+person.message(); 
+
